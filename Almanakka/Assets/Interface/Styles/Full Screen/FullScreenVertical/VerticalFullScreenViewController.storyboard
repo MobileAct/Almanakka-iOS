@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AYI-vF-0PC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vertical Full Screen View Controller-->
+        <scene sceneID="ptc-vL-uWm">
+            <objects>
+                <viewController storyboardIdentifier="VerticalFullScreenViewController" id="AYI-vF-0PC" customClass="VerticalFullScreenViewController" customModule="Almanakka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9DY-eY-qKd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2z-IL-2jT" customClass="ALKCollectionViewCalendar" customModule="Almanakka" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tea-iy-p35">
+                                <rect key="frame" x="16" y="814" width="382" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-2H-vPF" customClass="ALKCalendarButton" customModule="Almanakka" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="AYI-vF-0PC" eventType="touchUpInside" id="4c9-aJ-3uS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-9v-qGf" customClass="ALKCalendarButton" customModule="Almanakka" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="187" height="40"/>
+                                        <state key="normal" title="Ok"/>
+                                        <connections>
+                                            <action selector="okButtonPressed:" destination="AYI-vF-0PC" eventType="touchUpInside" id="u4I-sQ-HsS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yCi-2i-iCn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ybp-1e-9O1" firstAttribute="trailing" secondItem="m2z-IL-2jT" secondAttribute="trailing" id="1Ms-OV-VjE"/>
+                            <constraint firstItem="Ybp-1e-9O1" firstAttribute="bottom" secondItem="tea-iy-p35" secondAttribute="bottom" constant="8" id="1nS-bV-dLb"/>
+                            <constraint firstItem="m2z-IL-2jT" firstAttribute="leading" secondItem="Ybp-1e-9O1" secondAttribute="leading" id="8DQ-g1-pGe"/>
+                            <constraint firstItem="m2z-IL-2jT" firstAttribute="top" secondItem="Ybp-1e-9O1" secondAttribute="top" id="aY9-II-vFC"/>
+                            <constraint firstItem="Ybp-1e-9O1" firstAttribute="trailing" secondItem="tea-iy-p35" secondAttribute="trailing" constant="16" id="c8x-1N-fRg"/>
+                            <constraint firstItem="tea-iy-p35" firstAttribute="leading" secondItem="Ybp-1e-9O1" secondAttribute="leading" constant="16" id="pUl-un-fqv"/>
+                            <constraint firstAttribute="bottom" secondItem="m2z-IL-2jT" secondAttribute="bottom" id="zcK-kP-Tr9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ybp-1e-9O1"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="m2z-IL-2jT" id="pcX-ae-69N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXr-6f-2Wn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="58"/>
+        </scene>
+    </scenes>
+</document>

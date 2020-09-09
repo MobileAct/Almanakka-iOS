@@ -1,0 +1,35 @@
+{
+  "name": "Almanakka",
+  "version": "0.2.8",
+  "summary": "A calendar library.",
+  "description": "A calendar library. A calendar library. A calendar library. A calendar library.\nA calendar library. A calendar library. A calendar library. A calendar library.\nA calendar library. A calendar library. A calendar library. A calendar library.\nA calendar library. A calendar library. A calendar library. A calendar library.",
+  "homepage": "https://ghe.fenrir-inc.com/oscar/almanakka-pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Oscar": "oscar@fenrir.co.jp"
+  },
+  "source": {
+    "git": "git@ghe.fenrir-inc.com:oscar/almanakka-pod.git",
+    "tag": "0.2.8"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "12.4"
+  },
+  "info_plist": {
+    "CFBundleIdentifier": "com.mobile-act.Almanakka"
+  },
+  "pod_target_xcconfig": {
+    "PRODUCT_BUNDLE_IDENTIFIER": "com.mobile-act.Almanakka"
+  },
+  "source_files": "Almanakka/Classes/**/*.{swift}",
+  "resource_bundles": {
+    "Almanakka": [
+      "Almanakka/Assets/**/*.{storyboard,xib,lproj,png,csv}"
+    ]
+  },
+  "swift_version": "5.0"
+}

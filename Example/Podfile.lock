@@ -1,0 +1,27 @@
+PODS:
+  - Almanakka (0.2.8)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - Almanakka (from `../`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Almanakka:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Almanakka: 17c70212a7b0b7f3f76d13996d687758d6c5d4ee
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: c1cedda7aea77b831ef10143f3106041f63e5463
+
+COCOAPODS: 1.9.3

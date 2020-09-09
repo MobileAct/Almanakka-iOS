@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sk0-SV-9K2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Full Screen Horizontal Style-->
+        <scene sceneID="ym9-1J-x3y">
+            <objects>
+                <viewController storyboardIdentifier="FullScreenHorizontalStyle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sk0-SV-9K2" customClass="FullScreenHorizontalStyle" customModule="ALKInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NxF-KH-QPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhL-lh-2DR" customClass="ALKCollectionViewCalendar" customModule="ALKInterface" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-mB-V7v">
+                                <rect key="frame" x="0.0" y="722" width="414" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geG-SB-xSS" userLabel="Spacer">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="b0G-n0-q7o"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-RY-Cl1" customClass="ALKCalendarButton" customModule="ALKInterface" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kU4-sA-66f"/>
+                                            <constraint firstAttribute="width" constant="80" id="oAh-vL-6uO"/>
+                                        </constraints>
+                                        <state key="normal" title="cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="sk0-SV-9K2" eventType="touchUpInside" id="c2X-bc-R8w"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-QM-KN8" userLabel="Spacer">
+                                        <rect key="frame" x="120" y="0.0" width="174" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aul-DM-mwG" customClass="ALKCalendarButton" customModule="ALKInterface" customModuleProvider="target">
+                                        <rect key="frame" x="294" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="FlG-pQ-F3N"/>
+                                            <constraint firstAttribute="height" constant="40" id="LGa-lp-LS4"/>
+                                        </constraints>
+                                        <state key="normal" title="ok"/>
+                                        <connections>
+                                            <action selector="okButtonTapped:" destination="sk0-SV-9K2" eventType="touchUpInside" id="kTp-ei-P8l"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vu-7v-jQR" userLabel="Spacer">
+                                        <rect key="frame" x="374" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Ncn-cY-yiA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Csk-mB-V7v" firstAttribute="leading" secondItem="e9I-YH-UrU" secondAttribute="leading" id="DU3-6i-1bp"/>
+                            <constraint firstItem="mhL-lh-2DR" firstAttribute="top" secondItem="e9I-YH-UrU" secondAttribute="top" id="JMy-L9-gCq"/>
+                            <constraint firstItem="e9I-YH-UrU" firstAttribute="trailing" secondItem="mhL-lh-2DR" secondAttribute="trailing" id="Jer-3y-xD8"/>
+                            <constraint firstItem="mhL-lh-2DR" firstAttribute="leading" secondItem="e9I-YH-UrU" secondAttribute="leading" id="Oqh-fh-Nln"/>
+                            <constraint firstItem="e9I-YH-UrU" firstAttribute="trailing" secondItem="Csk-mB-V7v" secondAttribute="trailing" id="hRm-kR-eWF"/>
+                            <constraint firstItem="e9I-YH-UrU" firstAttribute="bottom" secondItem="mhL-lh-2DR" secondAttribute="bottom" id="ifm-7q-9zp"/>
+                            <constraint firstItem="e9I-YH-UrU" firstAttribute="bottom" secondItem="Csk-mB-V7v" secondAttribute="bottom" constant="100" id="t6p-GR-uOu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e9I-YH-UrU"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="mhL-lh-2DR" id="zkI-am-26Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USy-ST-DNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="84"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Almanakka_Example {
+  umbrella header "Pods-Almanakka_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
